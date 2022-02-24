@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://portfolio.haru-haru0.com/
+
+# Sitemaps
+Sitemap: https://portfolio.haru-haru0.com/sitemap.xml

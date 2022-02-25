@@ -23,7 +23,7 @@ module.exports = {
         'original' : '0 0 80px rgb(192 219 255 / 60%), 0 0 50px rgb(65 120 255 / 29%);',
       },
       backgroundImage: theme => ({
-        'bg-image': "url('/main3.png')",
+        'bg-image': "url('/bg4.jpg')",
       })
     },
   },

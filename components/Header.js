@@ -7,14 +7,8 @@ export default function Header() {
       <div className='flex items-center justify-between'>
         <Link href='/' passHref>
           <h1>
-            <a className='relative block w-[130px] xl:w-[180px] h-[50px] font-bold hover:cursor-pointer'>
-              <Image
-                src='/haru.png'
-                quality={100}
-                layout='fill'
-                objectFit='contain'
-                alt='泉原 遥輝 | Haruki Izumihara'
-              />
+            <a className='relative block font-bold xl:text-[1.4rem] hover:cursor-pointer'>
+              haruharu
             </a>
           </h1>
         </Link>
@@ -23,13 +17,7 @@ export default function Header() {
             <eli>
               <Link href='/about'>
                 <a className='relative block w-[130px] xl:w-[130px] h-[30px] font-bold hover:cursor-pointer'>
-                  <Image
-                    src='/about.png'
-                    quality={100}
-                    layout='fill'
-                    objectFit='contain'
-                    alt='泉原 遥輝 | Haruki Izumihara'
-                  />
+                  About
                 </a>
               </Link>
             </eli>

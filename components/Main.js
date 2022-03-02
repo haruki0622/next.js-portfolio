@@ -8,7 +8,7 @@ export default function Main() {
         <br />
         あたなのビジネス
         <br />
-        を加速させる
+        を加速させる！
       </h2>
     </div>
   );

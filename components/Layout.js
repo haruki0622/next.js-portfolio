@@ -1,12 +1,12 @@
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from './Header';
+import Footer from './Footer';
 
 export default function Layout({ children }) {
-  return(
-    <div>
+  return (
+    <div className='px-3'>
       <Header />
-      <main>{ children }</main>
+        <main>{children}</main>
       <Footer />
     </div>
-  )
+  );
 }

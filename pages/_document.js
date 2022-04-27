@@ -5,28 +5,12 @@ class MyDocument extends Document {
     return (
       <Html lang='ja'>
         <Head>
-          {/* <link
-            href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap'
-            rel='stylesheet'
-          />
           <link
-            href='https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap'
-            rel='stylesheet'
-          />
-          <link
-            href='https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap'
-            rel='stylesheet'
-          />
-          <link
-            href='https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap'
-            rel='stylesheet'
-          ></link> */}
-          <link
-            href='https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap'
+            href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap'
             rel='stylesheet'
           />
         </Head>
-        <body className='font-verda antialiased'>
+        <body className='text-base md:text-lg antialiased font-sans'>
           <Main />
           <div id='portal'></div>
           <NextScript />

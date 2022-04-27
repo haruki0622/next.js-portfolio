@@ -1,5 +1,5 @@
-import { client } from '../../libs/client';
 import Image from 'next/image';
+import { client } from '../../libs/client';
 import Layout from '../../components/Layout';
 import Heads from '../../components/Heads';
 
@@ -12,19 +12,15 @@ export default function BlogId({ blog }) {
         url={`https://portfolio.haru-haru0.com/works/${blog.id}`}
       />
       <Layout>
-        <div className='w-[85%] m-auto mt-10 xl:mt-28 flex flex-col items-center'>
-          <p className='text-sm mb-2 xl:text-base text-gray-500 font-mont xl:mt-20 tracking-[0.09em] mr-6'>
+        <div className='w-[100%] m-auto xl:mt-12 flex flex-col items-center'>
+          <h2 className='text-center mt-7 text-2xl font-bold mb-5 xl:text-6xl xl:font-bold xl:tracking-wider xl:mb-5'>
+            {blog.title}
+          </h2>
+          <p className='text-sm mb-2 xl:text-base text-gray-500 font-mont tracking-[0.09em] mr-6'>
             <span>投稿日:</span>
             {new Date(blog.createdAt).toLocaleString('ja-JP')}
           </p>
-          <h2 className='text-center text-2xl font-bold mb-5 xl:text-6xl xl:font-bold xl:tracking-wider xl:mb-5'>
-            {blog.title}
-          </h2>
           <Image
-            data-aos='fade-up'
-            data-aos-delay='50'
-            data-aos-duration='1000'
-            data-aos-easing='ease-in'
             src={blog.thumbnail.url}
             width={600}
             height={500}

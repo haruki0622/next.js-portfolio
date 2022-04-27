@@ -1,12 +1,17 @@
+// module
 import { client } from '../libs/client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from "framer-motion";
+import css from "styled-jsx/css";
+
+// components
 import Layout from '../components/Layout';
-import Skill from '../components/Contact';
+// import Skill from '../components/Contact';
 import Service from '../components/Service';
 import Main from '../components/Main';
-import About from '../components/About';
 import Heads from '../components/Heads';
+import Skills from '../components/Skills';
 
 export default function Home({ post }) {
   return (
@@ -18,39 +23,34 @@ export default function Home({ post }) {
       />
       <Layout>
         <Main />
-        <About />
+        <Skills />
         <Service />
         <div className='my-40'>
-          <h3 className='text-3xl text-center font-bold xl:text-8xl text-shadow-md xl:mb-10'>
-            Portfolio
-          </h3>
-          <span className='text-center mt-2 text-xl xl:text-2xl text-shadow-none block font-normal xl:mt-5'>
-            ポートフォリオ
-          </span>
-          <ul className='w-[85%] m-auto flex flex-col items-center xl:w-[100%]'>
+          <ul className='w-[100%] m-auto flex flex-col xl:flex-row xl:flex-wrap xl:justify-center xl:w-[93%]'>
             {post.map((post) => (
-              <li className='xl:w-[60%] my-20' key={post.id}>
-                <Link href={`/works/${post.id}`}>
-                  <a className='rounded-lg flex flex-col xl:justify-around xl:items-center xl:flex-row transition duration-500 ease-in-out hover:shadow-2xl'>
+              <li
+                className='md:w-full xl:w-[40%] mb-10 xl:m-6 hover:cursor-pointer'
+                key={post.id}
+                data-aos='fade-up'
+                data-aos-duration='1000'
+                data-aos-easing='ease'
+              >
+                <Link href={`/works/${post.id}`} passHref>
+                  <div className='relative max-w-full'>
                     <Image
                       src={post.thumbnail.url}
-                      quality={70}
-                      width={450}
-                      height={450}
-                      objectFit='contain'
                       alt='サムネイル画像'
+                      width={640}
+                      height={500}
+                      objectFit='contain'
+                      className='rounded-sm'
                     />
-                    <div className='p-2 xl:p-5 xl:w-[45%]'>
-                      <h4 className='text-xl mb-5 xl:text-3xl font-bold'>{post.title}</h4>
-                      <p className='text-md xl:text-lg leading-[1.7]'>{post.description}</p>
-                    </div>
-                  </a>
+                  </div>
                 </Link>
               </li>
             ))}
           </ul>
         </div>
-        <Skill />
       </Layout>
     </div>
   );

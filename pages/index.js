@@ -2,8 +2,6 @@
 import { client } from '../libs/client';
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from "framer-motion";
-import css from "styled-jsx/css";
 
 // components
 import Layout from '../components/Layout';

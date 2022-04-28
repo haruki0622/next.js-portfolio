@@ -1,5 +1,4 @@
 import Image from 'next/image';
-
 import Sns from "./Sns"
 
 export default function Main() {
@@ -8,7 +7,7 @@ export default function Main() {
       <div className='flex flex-col pt-10 xl:flex-row-reverse xl:xl:max-w-[1040px] xl: xl:mx-auto xl:py-[10rem]'>
         <div className='text-center xl:w-[50%]'>
           <Image
-            src='/profile.jpg'
+            src='/profile-1.jpg'
             alt='profile-image'
             width={330}
             height={330}

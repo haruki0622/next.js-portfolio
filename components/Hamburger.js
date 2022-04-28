@@ -1,13 +1,17 @@
 import Link from 'next/link';
 import { push as Menu } from 'react-burger-menu';
-import "../styles/style.module.css"
+import '../styles/style.module.css';
 
-export default function Hamburger({props}) {
+export default function Hamburger() {
   return (
-    <Menu pageWrapId={ "page-wrap" } right width={'100%'} noOverlay {...props}>
-      <Link href='/about' passHref>
-        about
-      </Link>
+    <Menu right width={'100%'} noOverlay>
+      <ul>
+        <li className="text-center">
+          <Link href='/about'>
+            <a className='text-2xl xl:text-6xl text-white'>ABOUT</a>
+          </Link>
+        </li>
+      </ul>
     </Menu>
   );
-};
+}

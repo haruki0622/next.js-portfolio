@@ -41,6 +41,7 @@
 .bm-cross-button {
   height: 24px;
   width: 24px;
+  right: 21px!important;
 }
 
 #page-wrap {
@@ -72,7 +73,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: white;
+  background: rgba(0,0,0,0.9);
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }

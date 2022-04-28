@@ -12,23 +12,25 @@ export default function About() {
         url='https://portfolio.haru-haru0.com/about'
       />
       <Layout>
-        <div className='flex flex-col'>
-          <div className='mt-5 xl:w-[55%] m-auto flex flex-col  xl:flex-row-reverse xl:justify-around xl:my-[100px]'>
+        <div className='mt-5 flex flex-col  xl:flex-row-reverse md:justify-center xl:my-[100px]'>
+          <div className='block text-center xl:w-[20%]'>
             <Image
-              src='/profile.jpg'
+              src='/profile-1.jpg'
+              alt='profile-image'
               width={330}
               height={330}
-              className='rounded-full'
               objectFit='contain'
-              alt='プロフィール画像'
+              className='rounded-full'
             />
-            <div className='xl:w-[40%] p-3 xl:p-8'>
-              <p className='text-base mb-3 leading-[2]'>
-                大阪市内でフリーランスとして活動している、泉原遥輝 (Haruki
-                Izumihara)です。Web制作、LPなどをメインの業務としています。デザインからWebサイトの作成まで一括で受注しています。SEO対策やレスポンシブ対応も可能です。
-              </p>
-              <Sns className="xl:text-left" />
-            </div>
+          </div>
+          <div className='xl:w-[40%] xl:p-8'>
+          <h2 className='text-3xl font-bold'>ABOUT</h2>
+            <p className='text-base mb-3 leading-[2] xl:text-lg xl:leading-[2.5]'>
+              大阪市内でフリーランスとして活動している、泉原遥輝 (Haruki
+              Izumihara)です。Web制作、LPなどをメインの業務としています。デザインからWebサイトの作成まで一括で受注しています。SEO対策やレスポンシブ対応も可能です。<br />
+              
+            </p>
+            <Sns />
           </div>
         </div>
       </Layout>

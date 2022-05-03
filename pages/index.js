@@ -10,10 +10,11 @@ import Service from '../components/Service';
 import Main from '../components/Main';
 import Heads from '../components/Heads';
 import Skills from '../components/Skills';
+import Works from '../components/Works';
 
 export default function Home({ post }) {
   return (
-    <div>
+    <>
       <Heads
         title='泉原遥輝 | Haruki Izumihara'
         description='大阪市でWeb系のフリーランスをしています。本サイトはポートフォリオの掲載や営業目的で作成しました。お気軽にお問い合わせ下さい。'
@@ -23,7 +24,8 @@ export default function Home({ post }) {
         <Main />
         <Skills />
         <Service />
-        <div className='my-40'>
+        <Works post={post} />
+        {/* <div className='my-40'>
           <ul className='w-[100%] m-auto flex flex-col xl:flex-row xl:flex-wrap xl:justify-center xl:w-[93%]'>
             {post.map((post) => (
               <li
@@ -48,9 +50,9 @@ export default function Home({ post }) {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </Layout>
-    </div>
+    </>
   );
 }
 

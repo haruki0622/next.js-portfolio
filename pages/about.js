@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Layout from '../components/Layout';
 import Heads from '../components/Heads';
-import Sns from '../components/Sns';
+// import Sns from '../components/Sns';
 
 export default function About() {
   return (
@@ -30,7 +30,6 @@ export default function About() {
               Izumihara)です。Web制作、LPなどをメインの業務としています。デザインからWebサイトの作成まで一括で受注しています。SEO対策やレスポンシブ対応も可能です。<br />
               
             </p>
-            <Sns />
           </div>
         </div>
       </Layout>

@@ -5,7 +5,6 @@ import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    // 追加
     AOS.init();
   }, []);
 

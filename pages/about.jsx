@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Layout from '../components/Layout';
 import Heads from '../components/Heads';
-// import Sns from '../components/Sns';
+import Sns from '../components/Sns';
 
 export default function About() {
   return (
@@ -24,12 +24,12 @@ export default function About() {
             />
           </div>
           <div className='xl:w-[40%] xl:p-8'>
-          <h2 className='text-3xl font-bold'>ABOUT</h2>
             <p className='text-base mb-3 leading-[2] xl:text-lg xl:leading-[2.5]'>
               大阪市内でフリーランスとして活動している、泉原遥輝 (Haruki
-              Izumihara)です。Web制作、LPなどをメインの業務としています。デザインからWebサイトの作成まで一括で受注しています。SEO対策やレスポンシブ対応も可能です。<br />
-              
+              Izumihara)です。Web制作、LPなどをメインの業務としています。デザインからWebサイトの作成まで一括で受注しています。SEO対策やレスポンシブ対応も可能です。
+              <br />
             </p>
+            <Sns />
           </div>
         </div>
       </Layout>

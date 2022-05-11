@@ -1,5 +1,5 @@
 import Image from 'next/image';
-// import Sns from "./Sns"
+import Sns from './Sns';
 
 export default function Main() {
   return (
@@ -27,7 +27,7 @@ export default function Main() {
           <p className='text-base leading-7 mt-5 xl:leading-relaxed'>
             Web制作,LPなどのお仕事をしています。フロントエンドエンジニアとしてWebアプリの開発もしていきたいと考えています！
           </p>
-          {/* <Sns /> */}
+          <Sns />
         </div>
       </div>
     </>

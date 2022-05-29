@@ -17,7 +17,7 @@ export default function Main() {
         </div>
         <div className='xl:w-[40%]'>
           <h2
-            className='mt-5 inline-block text-4xl font-pd tracking-wide text-black font-bold leading-relaxed text-center
+            className='mt-5 inline-block text-4xl tracking-wide text-black font-bold leading-relaxed text-center
           mb:text-[4rem]  md:leading-relaxed xl:text-[4rem] xl:text-left'
             data-aos='fade-up'
             data-aos-duration='1000'

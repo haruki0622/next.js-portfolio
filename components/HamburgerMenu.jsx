@@ -23,7 +23,9 @@ const HamburgerMenu = () => {
             </li>
             <li>
               <Link href='https://next-js-blog-nine-liart.vercel.app/'>
-                <a  target="_blank" className='text-white text-xl md:text-2xl'>Blog</a>
+                <a target='_blank' className='text-white text-xl md:text-2xl'>
+                  Blog
+                </a>
               </Link>
             </li>
           </ul>

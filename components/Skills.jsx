@@ -3,7 +3,7 @@ import React from 'react';
 export default function Skills() {
   return (
     <div className='bg-black pb-32 pt-16 rounded-md mt-[10rem] mb-[10rem] xl:py-[17rem]'>
-      <h3 className=' text-white text-6xl font-bold mb-14 tracking-[-0.1em] leading-4 text-center md:text-[6rem] xl:text-[8rem] '>
+      <h3 className=' text-white text-6xl font-bold mb-14 leading-4 text-center md:text-[6rem] xl:text-[8rem] '>
         Value
       </h3>
       <div>

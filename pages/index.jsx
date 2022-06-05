@@ -6,6 +6,8 @@ import Main from '../components/Main';
 import Heads from '../components/Heads';
 import Skills from '../components/Skills';
 import Works from '../components/Works';
+import Features from '../components/Features';
+import Contact from '../components/Contact';
 
 export default function Home({ post }) {
   return (
@@ -17,9 +19,11 @@ export default function Home({ post }) {
       />
       <Layout>
         <Main />
-        <Skills />
+        {/* <Skills /> */}
         <Service />
+        <Features />
         <Works post={post} />
+        <Contact />
       </Layout>
     </>
   );

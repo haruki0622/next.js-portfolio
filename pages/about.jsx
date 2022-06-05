@@ -12,8 +12,8 @@ export default function About() {
         url='https://portfolio.haru-haru0.com/about'
       />
       <Layout>
-        <div className='mt-5 flex flex-col  xl:flex-row-reverse md:justify-center xl:my-[100px]'>
-          <div className='block text-center xl:w-[20%]'>
+        <div className='mt-5 flex flex-col max-w-[1120px] mx-auto xl:flex-row-reverse lg:justify-between items-center xl:my-[100px]'>
+          <div className='block text-center'>
             <Image
               src='/profile-1.jpg'
               alt='profile-image'
@@ -23,8 +23,8 @@ export default function About() {
               className='rounded-full'
             />
           </div>
-          <div className='xl:w-[40%] xl:p-8'>
-            <p className='text-base mb-3 leading-[2] xl:text-lg xl:leading-[2.5]'>
+          <div className='lg:max-w-[500px]'>
+            <p className='text-base mb-3 leading-[2] xl:text-lg xl:leading-[2]'>
               大阪市内でフリーランスとして活動している、泉原遥輝 (Haruki
               Izumihara)です。Web制作、LPなどをメインの業務としています。デザインからWebサイトの作成まで一括で受注しています。SEO対策やレスポンシブ対応も可能です。
               <br />

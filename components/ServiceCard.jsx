@@ -1,23 +1,12 @@
 import Image from 'next/image';
 
-export default function ServiceCard({ imageSrc, serviceTitle, serviceContent }) {
+export default function ServiceCard({ src, title, description }) {
   return (
     <>
-      <div
-        className='my-10 w-[80%] flex flex-col xl:w-[25%] items-center'
-        data-aos='fade-up'
-        data-aos-duration='1000'
-      >
-        <Image
-          src={imageSrc}
-          quality={70}
-          width={350}
-          height={350}
-          objectFit='contain'
-          alt='service-image'
-        />
-        <p className='text-2xl xl:text-3xl font-bold'>{serviceTitle}</p>
-        <p className='text-md xl:text-xl xl:leading-loose pt-6 xl:h-[150px]'>{serviceContent}</p>
+      <div>
+        <Image src={src} layout='responsive' width={350} height={350} alt='service-image' />
+        <p className='mt-3 mb-2 text-xl lg:text-2xl lg:my-5 font-bold'>{title}</p>
+        <p className='text-base xl:text-lg leading-8 lg:leading-[2]'>{description}</p>
       </div>
     </>
   );

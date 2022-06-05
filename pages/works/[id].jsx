@@ -1,7 +1,10 @@
 import Image from 'next/image';
+import markdownStyles from '../../styles/markdown-styles.module.css';
 import { client } from '../../libs/client';
 import Layout from '../../components/Layout';
 import Heads from '../../components/Heads';
+import PostDate from '../../components/PostDate';
+import PostTitle from '../../components/PostTitle';
 
 export default function BlogId({ blog }) {
   return (
@@ -12,28 +15,25 @@ export default function BlogId({ blog }) {
         url={`https://portfolio.haru-haru0.com/works/${blog.id}`}
       />
       <Layout>
-        <div className='w-[100%] m-auto xl:mt-12 flex flex-col items-center'>
-          <h2 className='text-center mt-7 text-2xl font-bold mb-5 xl:text-6xl xl:font-bold xl:tracking-wider xl:mb-5'>
-            {blog.title}
-          </h2>
-          <p className='text-sm mb-2 xl:text-base text-gray-500 font-mont tracking-[0.09em] mr-6'>
-            <span>投稿日:</span>
-            {new Date(blog.createdAt).toLocaleString('ja-JP')}
-          </p>
-          <Image
-            src={blog.thumbnail.url}
-            width={600}
-            height={500}
-            objectFit='contain'
-            alt='サムネイル画像'
-          />
-          <div
-            // className='w-11/12 prose prose-blue prose-base xl:m-0 xl:w-6/12 xl:prose-lg xl:prose-img:{shadow-md}'
-            className='w-11/12 prose  prose-blue prose-base xl:m-0 xl:w-6/12 xl:prose-lg xl:prose-img:drop-shadow-2xl'
-            dangerouslySetInnerHTML={{
-              __html: `${blog.body}`,
-            }}
-          />
+        <div className='w-full px-7 py-10 lg:max-w-[960px] mx-auto lg:py-32'>
+          <PostTitle title={blog.title} />
+          <PostDate createdAt={blog.createdAt} updatedAt={blog.updatedAt} />
+          <div className="relative h-[24rem] lg:h-[32rem] block lg:mb-20">
+            <Image
+              src={blog.thumbnail.url}
+              layout='fill'
+              objectFit='contain'
+              alt='サムネイル画像'
+            />
+          </div>
+          <div className='prose lg:prose-lg'>
+            <div
+              className={markdownStyles['markdown']}
+              dangerouslySetInnerHTML={{
+                __html: `${blog.body}`,
+              }}
+            />
+          </div>
         </div>
       </Layout>
     </div>

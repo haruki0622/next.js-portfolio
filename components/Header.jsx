@@ -5,7 +5,7 @@ import HamburgerMenu from './HamburgerMenu';
 
 export default function Header() {
   return (
-    <header className='py-3  xl:mx-auto xl:max-w-4xl'>
+    <header className='py-3 px-3 xl:mx-auto xl:max-w-[1120px]'>
       <div className='flex justify-between items-center'>
         <h1>
           <Link href='/'>

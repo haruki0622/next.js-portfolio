@@ -8,7 +8,7 @@ module.exports = {
         font:['Montserrat','Noto Sans JP']
       },
       gridTemplateColumns: {
-        '3': 'repeat(3,350px)',
+        '3': '1fr 1fr 1fr',
         '1': '1fr',
         '2':'1fr 1fr',
       }

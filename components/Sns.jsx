@@ -20,7 +20,7 @@ export default function Sns() {
         </a>
       </li>
       <li className='mx-5'>
-        <a className='hover:underline' href='https://haru-haru0.com/'>
+        <a className='hover:underline' href='https://next-js-blog-nine-liart.vercel.app/'>
           <Image src='/blog-logo.svg' alt='ブログロゴ画像' width={35} height={20} objectFit="cover" />
         </a>
       </li>

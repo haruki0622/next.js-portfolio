@@ -6,12 +6,12 @@ export default function Navbar() {
       <ul className="flex items-center">
         <li className="ml-10">
           <Link href='/about'>
-            <a className="hover:opacity-30">About</a>
+            <a className="hover:opacity-30 font-mont">About</a>
           </Link>
         </li>
         <li  className="ml-10">
           <Link href='https://next-js-blog-nine-liart.vercel.app/'>
-            <a className="hover:opacity-30" target="_blank">Blog</a>
+            <a className="hover:opacity-30 font-mont" target="_blank">Blog</a>
           </Link>
         </li>
       </ul>

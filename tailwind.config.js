@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        font:['Montserrat','Noto Sans JP']
+        mont:['Montserrat'],
+        fonts:['apple-system','BlinkMacSystemFont',"Helvetica Neue","Segoe UI","Hiragino Kaku Gothic ProN","Hiragino Sans",'Arial','Meiryo','sans-serif']
       },
       gridTemplateColumns: {
         '3': '1fr 1fr 1fr',

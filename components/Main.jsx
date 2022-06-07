@@ -17,7 +17,7 @@ export default function Main() {
         </div>
         <div className="max-w-[550px]">
           <h2
-            className='mt-5 inline-block text-4xl text-black font-bold text-center tracking-tight
+            className='font-mont mt-5 inline-block text-4xl text-black font-bold text-center tracking-tight
           mb:text-[4rem]  md:leading-[1.1] lg:text-[4rem] lg:text-left xl:mt-0'
             data-aos='fade-up'
             data-aos-duration='1000'

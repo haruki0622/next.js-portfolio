@@ -17,6 +17,8 @@
 
   @apply prose-li:list-disc;
 
+  @apply prose-img:shadow-xl;
+
   @apply marker:text-gray-400;
 }
 

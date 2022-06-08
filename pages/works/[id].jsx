@@ -26,7 +26,7 @@ export default function BlogId({ blog }) {
               alt='サムネイル画像'
             />
           </div>
-          <div className='prose lg:prose-lg lg:max-w-full'>
+          <div className='prose lg:prose-lg lg:max-w-[80%] lg:mx-auto'>
             <div
               className={markdownStyles['markdown']}
               dangerouslySetInnerHTML={{

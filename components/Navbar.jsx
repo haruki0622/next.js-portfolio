@@ -10,7 +10,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li  className="ml-10">
-          <Link href='https://next-js-blog-nine-liart.vercel.app/'>
+          <Link href='https://haru-haru0.com/'>
             <a className="hover:opacity-30 font-mont" target="_blank">Blog</a>
           </Link>
         </li>

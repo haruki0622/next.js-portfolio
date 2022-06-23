@@ -15,7 +15,7 @@ export default function Main() {
             className='rounded-full'
           />
         </div>
-        <div className="max-w-[550px]">
+        <div className='max-w-[550px]'>
           <h2
             className='font-mont mt-5 inline-block text-4xl text-black font-bold text-center tracking-tight
           mb:text-[4rem]  md:leading-[1.1] lg:text-[4rem] lg:text-left xl:mt-0'
@@ -24,10 +24,10 @@ export default function Main() {
           >
             Hello I&apos;m Haruki Izumihara
           </h2>
-          <p className='text-base leading-7 mt-5 xl:leading-[1.8]'>
+          <p className='text-base text-center leading-7 mt-5 lg:text-left xl:leading-[1.8]'>
             初めまして。泉原遥輝です。フリーランスとしてWeb制作などのお仕事をしています！このサイトでは、実績などを紹介しています。
           </p>
-          <Sns />
+          <Sns justifyStart='lg:justify-start' />
         </div>
       </div>
     </>

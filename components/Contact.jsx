@@ -5,7 +5,7 @@ import ContactItem from './ContactItem';
 
 const Contact = () => {
   return (
-    <section className='max-w-[370px] px-7 mx-auto  md:max-w-[736px]'>
+    <section className='max-w-[370px] px-7 mx-auto  md:max-w-[750px]'>
       <SectionTitle>Contact me</SectionTitle>
       <SectionText>
         Twitterかメールでお問い合わせ下さい。 メッセージをお待ちしています！

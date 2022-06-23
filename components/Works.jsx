@@ -5,10 +5,10 @@ import Image from 'next/image';
 const Works = ({ post }) => {
   return (
     <div className='my-40'>
-      <ul className='w-[100%] m-auto flex flex-col xl:flex-row xl:flex-wrap xl:justify-center xl:w-[93%]'>
+      <div className='grid items-center max-w-[380px] mx-auto gap-y-16 grid-cols-1 lg:grid-cols-2 lg:max-w-[1120px] lg:gap-8'>
         {post.map((post) => (
-          <li
-            className='md:w-full xl:w-[40%] mb-10 xl:m-6 hover:cursor-pointer'
+          <article
+            className='hover:cursor-pointer'
             key={post.id}
             data-aos='fade-up'
             data-aos-duration='1000'
@@ -26,9 +26,9 @@ const Works = ({ post }) => {
                 />
               </div>
             </Link>
-          </li>
+          </article>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

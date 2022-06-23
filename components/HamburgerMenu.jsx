@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { HiMenuAlt1 } from 'react-icons/hi';
+import { FiMenu } from 'react-icons/fi';
 import { FaTimes } from 'react-icons/fa';
 
 const HamburgerMenu = () => {
@@ -8,7 +8,7 @@ const HamburgerMenu = () => {
   return (
     <>
       <div className='lg:hidden'>
-        <HiMenuAlt1 fontSize={26} onClick={() => setShowHamburger(true)} />
+        <FiMenu fontSize={26} onClick={() => setShowHamburger(true)} />
       </div>
       {showHamburger && (
         <nav className='w-full h-full bg-gray-800 fixed top-0 left-0 z-10'>

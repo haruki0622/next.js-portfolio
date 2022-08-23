@@ -12,24 +12,22 @@ export default function About() {
         url='https://portfolio.haru-haru0.com/about'
       />
       <Layout>
-        <div className='mt-5 flex flex-col max-w-[1120px] mx-auto xl:flex-row-reverse lg:justify-between items-center xl:my-[100px]'>
-          <div className='block text-center'>
+        <div className='flex flex-col w-full px-7 pt-5 lg:max-w-[960px] mx-auto lg:py-10 lg:flex-row-reverse lg:items-start lg:justify-between'>
+          <div className='max-w-[400px] lg:w-[30%]'>
             <Image
-              src='/profile-1.jpg'
-              alt='profile-image'
-              width={330}
-              height={330}
+              src='/profile-3.jpg'
+              alt='サムネイル画像'
+              layout='responsive'
               objectFit='contain'
-              className='rounded-full'
+              width='1200'
+              height='1200'
             />
           </div>
-          <div className='lg:max-w-[500px]'>
-            <p className='text-base mb-3 leading-[2] xl:text-lg xl:leading-[2]'>
-              大阪市内でフリーランスとして活動している、泉原遥輝 (Haruki
-              Izumihara)です。Web制作、LPなどをメインの業務としています。デザインからWebサイトの作成まで一括で受注しています。SEO対策やレスポンシブ対応も可能です。
-              <br />
+          <div className='w-full max-w-[500px]'>
+            <p className='text-lg leading-8 tracking-wide'>
+              大阪府でフリーランスとして活動しています。主なお仕事はWeb制作やLPのお仕事を請け負っています。好きな事は科学や、読書、散歩です。知的好奇心が高く、何でも調べる癖があります（笑）直近は海外生活を始めたくてvlogもしてみたいです！よろしくお願いします。
             </p>
-            <Sns />
+            <Sns justifyStart='lg:justify-start'/>
           </div>
         </div>
       </Layout>

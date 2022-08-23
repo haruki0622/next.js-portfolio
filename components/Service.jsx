@@ -5,10 +5,10 @@ import SectionText from './text/SectionText';
 export default function Service() {
   return (
     <section className='py-[70px] lg:py-[100px] my-[100px] bg-gray-100'>
-      <div className="lg:max-w-[1120px] mx-auto px-[30px]">
+      <div>
         <SectionTitle>幅広いお仕事をしています！</SectionTitle>
         <SectionText>WordPress、LPの作成から業務改善ツールの作成をしています。</SectionText>
-        <div className='grid grid-cols-1 mx-auto gap-14 max-w-[380px] lg:px-0 lg:max-w-none lg:grid-cols-3 lg:gap-[36px]'>
+        <div className='grid grid-cols-1 gap-y-14 mx-auto px-[30px] max-w-[500px] lg:px-0 lg:max-w-[1120px] lg:grid-cols-3 lg:gap-[36px]'>
           <ServiceCard
             src='/wrordpress.jpg'
             title='WordPress'

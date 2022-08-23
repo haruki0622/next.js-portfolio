@@ -2,7 +2,7 @@ import React from 'react';
 
 const PostTitle = ({ title }) => {
   return (
-    <h2 className='text-center text-2xl font-bold mb-5 xl:text-5xl xl:font-bold xl:mb-5'>
+    <h2 className='text-center text-2xl font-bold mb-5 lg:text-5xl lg:font-bold lg:mb-5 lg:leading-[4rem]'>
       {title}
     </h2>
   );

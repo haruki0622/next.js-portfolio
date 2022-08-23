@@ -15,18 +15,21 @@ export default function BlogId({ blog }) {
         url={`https://portfolio.haru-haru0.com/works/${blog.id}`}
       />
       <Layout>
-        <div className='w-full px-7 py-10 lg:max-w-[960px] mx-auto lg:py-32'>
+        <div className='w-full px-7 pt-5 lg:max-w-[960px] mx-auto lg:py-10'>
           <PostTitle title={blog.title} />
           <PostDate createdAt={blog.createdAt} updatedAt={blog.updatedAt} />
-          <div className="relative h-[24rem] lg:h-[32rem] block lg:mb-20">
+          <div>
             <Image
               src={blog.thumbnail.url}
-              layout='fill'
-              objectFit='contain'
               alt='サムネイル画像'
+              layout='responsive'
+              objectFit='contain'
+              // objectFit="cover"
+              width='160'
+              height='100%'
             />
           </div>
-          <div className='prose lg:prose-lg lg:max-w-[80%] lg:mx-auto'>
+          <div className='prose lg:max-w-[80%] lg:mx-auto'>
             <div
               className={markdownStyles['markdown']}
               dangerouslySetInnerHTML={{

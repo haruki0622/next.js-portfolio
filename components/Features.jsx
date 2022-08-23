@@ -4,7 +4,7 @@ import FeaturesItem from '../components/FeaturesItem';
 
 const Features = () => {
   return (
-    <div className='grid gap-y-14 max-w-[380px] lg:max-w-[1120px] mx-auto md:px-7 lg:gap-48 '>
+    <div className='grid gap-y-14 grid-cols-1 max-w-[500px] px-[30px] lg:max-w-[1120px] mx-auto lg:gap-20 '>
       <FeaturesItem
         src='/sass-bem.jpg'
         title='SASS,BEMを使ったコーディング'

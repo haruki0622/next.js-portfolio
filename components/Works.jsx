@@ -12,9 +12,9 @@ const Works = ({ post }) => {
           key={post.id}
         >
           <Link href={`/works/${post.id}`}>
-            <a className='lg:flex lg:justify-around lg:items-center'>
+            <a className='flex flex-col-reverse lg:flex-row lg:justify-around lg:items-center'>
               <div className='lg:w-[50%]'>
-                <h3 className='text-xl mb-2 font-bold lg:text-2xl lg:mb-5'>{post.title}</h3>
+                <h3 className='text-xl mt-4 mb-2 font-bold lg:text-2xl lg:mb-5 lg:mt-0'>{post.title}</h3>
                 <p className='leading-7 mb-2'>{post.description}</p>
               </div>
               <div className='lg:w-[30%]'>
